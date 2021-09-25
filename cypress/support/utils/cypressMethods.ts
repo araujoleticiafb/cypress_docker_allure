@@ -1,4 +1,4 @@
-// import 'cypress-wait-until'
+import 'cypress-wait-until'
 
 class CypressMethods {
 
@@ -26,7 +26,7 @@ class CypressMethods {
       cy.get(element).click()
    }
 
-   public clickfirstElementButton(element: string) {
+   public clickfirstButton(element: string) {
       cy.get(element).first().click()
    }
 
@@ -138,23 +138,16 @@ class CypressMethods {
       return txt
    }
 
-   // public waitElementNotExist(element: string) {
-   //    cy.waitUntil(function () {
-   //       return cy.get(element).should('not.exist')
-   //    })
-   // }
+   public waitElementNotExist(element: string) {
+      cy.waitUntil(function () {
+         return cy.get(element).should('not.exist')
+      })
+   }
 
-   // public waitElementNotVisible(element: string) {
-   //    cy.waitUntil(function () {
-   //       return cy.get(element).should('not.be.visible')
-   //    })
-   // }
-
-   public replaceCSSProperty(element: string, attribute: string, propertyToChange: string, change: string) {
-      cy.get(element)
-         .invoke(attribute).then((attr) => {
-            cy.wrap(attr).should('have.css', propertyToChange, change)
-         })
+   public waitElementNotVisible(element: string) {
+      cy.waitUntil(function () {
+         return cy.get(element).should('not.be.visible')
+      })
    }
 
    public clearInput(element: string) {
