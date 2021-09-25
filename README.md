@@ -25,6 +25,8 @@ The project has the following structure:
     │  │  ├──[utils]
     │  │  |  ├──[constants.ts]
     │  │  |  ├──[cypressMethods.ts]
+    
+  ```
 
 ## 🚀 Running with Docker
 Download and install [Docker](https://www.docker.com/products/docker-desktop).
@@ -34,6 +36,7 @@ Download and install [Docker](https://www.docker.com/products/docker-desktop).
 ```sh
 $ docker build -t YOUR_IMAGE_NAME .
 ```
+
 ### Run
 ```sh
 $ docker run -it -p 8787:8787 YOUR_IMAGE_NAME
