@@ -1,0 +1,12 @@
+{
+    "baseUrl":"https://www.globo.com",
+    "testFiles": "**/*.{feature,features}",
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 200000,
+    "pageLoadTimeout": 200000,
+    "env": {
+        "allureResultsPath": "allure-results"
+    }
+}

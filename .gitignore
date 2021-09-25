@@ -1,0 +1,59 @@
+## Functional Tests ##
+/videos
+/drivers
+/node_modules
+/reports
+/screenshots
+/visual_regression_screenshots/diff
+/visual_regression_screenshots/taken
+/src/js
+*.log
+package-lock.json
+
+### Intellij ###
+.idea
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+### Intellij Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+*.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+### MacOS ###
+.DS_Store
+
+### Linux like ###
+*~
+
+### Cypress ###
+/videos
+/photos
+
+### Vscode ###
+.vscode

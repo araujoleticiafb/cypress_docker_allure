@@ -1,0 +1,30 @@
+{
+  "name": "cypresswithtypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.13.0",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "@types/mocha": "latest",
+    "@types/node": "^14.17.3",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-wait-until": "^1.7.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/step_definitions"
+
+  },
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "author": "",
+  "license": "ISC"
+}
