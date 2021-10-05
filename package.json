@@ -23,7 +23,10 @@
 
   },
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run --env allure=true",
+    "allure:open": "allure open allure-report",
+    "test:allure": "sh ./start.sh local"
   },
   "author": "",
   "license": "ISC"
