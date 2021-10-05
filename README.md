@@ -72,6 +72,7 @@ npm -v
 > **NOTE 3:** If 'npm install' does not install all dependencies follow the steps:<br/>
 > npm install -g allure-commandline --save-dev<br/>
 > npm i -D @shelex/cypress-allure-plugin<br/>
+> > npm install --save-dev @cypress/browserify-preprocessor<br/>
 > npm i --save-dev @types/mocha<br/>
 > npm install --save-dev @types/cypress-cucumber-preprocessor<br/> 
 
