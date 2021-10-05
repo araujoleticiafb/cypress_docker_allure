@@ -80,4 +80,4 @@ RUN echo  " node version:    $(node -v) \n" \
 COPY ./ .
 RUN chmod +x /start.sh
 
-CMD /start.sh
+CMD /start.sh ci
