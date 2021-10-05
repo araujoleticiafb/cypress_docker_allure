@@ -1,5 +1,3 @@
-import 'cypress-wait-until'
-
 class CypressMethods {
 
    public access(url: string) {
@@ -136,18 +134,6 @@ class CypressMethods {
          txt = ele.text()
       })
       return txt
-   }
-
-   public waitElementNotExist(element: string) {
-      cy.waitUntil(function () {
-         return cy.get(element).should('not.exist')
-      })
-   }
-
-   public waitElementNotVisible(element: string) {
-      cy.waitUntil(function () {
-         return cy.get(element).should('not.be.visible')
-      })
    }
 
    public clearInput(element: string) {
