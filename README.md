@@ -80,6 +80,7 @@ npm -v
 $ chmod +x start.sh
 ```
 **Install Allure Report**
+
 MacOS
 ```sh
 $ brew install allure
