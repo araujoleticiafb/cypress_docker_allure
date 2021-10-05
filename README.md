@@ -2,7 +2,7 @@
 
 This is a repository that contains the structure of Automated Web UI Testing.
 
-### 🔧 Tools & Technologies
+### 🛠️ Tools & Technologies
 
 This project use the framework [Cypress](https://www.cypress.io/) used with [TypeScript](https://www.typescriptlang.org/), [Cucumber](https://cucumber.io/) and [Docker](https://github.com/cypress-io/cypress-docker-images/blob/master/included/8.3.0/Dockerfile).
 Additionally, [Allure Report](https://docs.qameta.io/allure/) is applied to show tests results. 
@@ -43,16 +43,16 @@ $ docker run -it -p 8787:8787 YOUR_IMAGE_NAME
 ```
 > **NOTE 1:** Replace **YOUR_IMAGE_NAME**.
 
-### View Allure Reports
+### 📊 View Allure Reports
 ```sh
 $ http://localhost:8787
 ```
 > **NOTE 2:** When running tests using Docker you could not click on the URL, which is displayed at the end of tests. So you must change http://172.17.0.3:8787 to http://localhost:8787.<br/>
 > > 🐛 [Error base image Cypress](https://github.com/cypress-io/cypress/issues/4351#issuecomment-559489091) 
 
-## ⚙️ Running locally
+## 📍 Running locally
 
-### Pre Requirements
+### ⚙️ Pre Requirements
 
 **1. Verify node version**
 ```sh
@@ -98,7 +98,7 @@ sudo apt-get install allure
 ```sh
 $ npm run cy:open
 ```
-### Running tests in headless mode
+### ⬛ Running tests in headless mode
 ```sh
 $ npm run test:allure
 ```
