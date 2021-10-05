@@ -47,9 +47,10 @@ $ docker run -it -p 8787:8787 YOUR_IMAGE_NAME
 ```sh
 $ http://localhost:8787
 ```
-> **NOTE 2:** When running tests using Docker you could not click on the URL, which is displayed at the end of tests. So you must change http://172.17.0.3:8787 to http://localhost:8787.
+> **NOTE 2:** When running tests using Docker you could not click on the URL, which is displayed at the end of tests. So you must change http://172.17.0.3:8787 to http://localhost:8787.<br/>
+> > 🐛 [Error base image Cypress](https://github.com/cypress-io/cypress/issues/4351#issuecomment-559489091) 
 
-## ✨ Running locally
+## ⚙️ Running locally
 
 ### Pre Requirements
 
@@ -74,6 +75,7 @@ npm -v
 > >npm i -D @shelex/cypress-allure-plugin<br/>
 > >npm install --save-dev @cypress/browserify-preprocessor<br/>
 > >npm i --save-dev @types/mocha<br/>
+> >npm install --save-dev typescript<br/>
 > >npm install --save-dev @types/cypress-cucumber-preprocessor<br/> 
 
 **5. Given permission**
@@ -92,7 +94,7 @@ $ sudo apt-add-repository ppa:qameta/allure
 sudo apt-get update 
 sudo apt-get install allure
 ```
-### Running tests with interface graphic
+### 🖥️ Running tests with interface graphic
 ```sh
 $ npm run cy:open
 ```
@@ -100,7 +102,7 @@ $ npm run cy:open
 ```sh
 $ npm run test:allure
 ```
-#### View Allure Reports
+#### 📊 View Allure Reports
 ```sh
 $ npm run allure:open
 ```
