@@ -53,19 +53,19 @@ $ http://localhost:8787
 
 ### Pre Requirements
 
-**Verify node version**
+**1. Verify node version**
 ```sh
 node -v
 ```
 
-**Verify NPM version**
+**2. Verify NPM version**
 ```sh
 npm -v
 ```
 
-**Clone the project**
+**3. Clone the project**
 
-**Install dependencies at package.json**
+**4. Install dependencies at package.json**
  ```sh
  $ npm install
 ```
@@ -75,11 +75,11 @@ npm -v
 > npm i --save-dev @types/mocha<br/>
 > npm install --save-dev @types/cypress-cucumber-preprocessor<br/> 
 
-**Given permission**
+**5. Given permission**
 ```sh
 $ chmod +x start.sh
 ```
-**Install Allure Report**
+**6. Install Allure Report**
 
 MacOS
 ```sh
