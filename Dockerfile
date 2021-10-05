@@ -27,6 +27,7 @@ RUN id
 ENV CYPRESS_CACHE_FOLDER=/root/.cache/Cypress
 RUN npm install -g "cypress@8.1.0"
 RUN npm i -D "@shelex/cypress-allure-plugin"
+RUN npm install --save-dev @cypress/browserify-preprocessor
 RUN npm install --save-dev @types/cypress-cucumber-preprocessor
 RUN cypress verify
 
