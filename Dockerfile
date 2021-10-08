@@ -30,6 +30,7 @@ RUN npm i -D "@shelex/cypress-allure-plugin"
 RUN npm install --save-dev @cypress/browserify-preprocessor
 RUN npm install --save-dev cypress-cucumber-preprocessor
 RUN npm install --save-dev typescript
+RUN npm install -D cypress-xpath
 RUN cypress verify
 
 # Cypress cache and installed version
@@ -82,4 +83,4 @@ RUN echo  " node version:    $(node -v) \n" \
 COPY ./ .
 RUN chmod +x /start.sh
 
-CMD /start.sh ci
+ENTRYPOINT ["/start.sh"]

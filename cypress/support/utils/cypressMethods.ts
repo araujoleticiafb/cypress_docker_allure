@@ -1,3 +1,4 @@
+/// <reference types="cypress-xpath"/>
 class CypressMethods {
 
    public access(url: string) {
@@ -90,6 +91,10 @@ class CypressMethods {
       else return false
    }
 
+   public isNotClicable(element: string): boolean {
+      if (cy.get(element).should('not.be.enabled')) return true
+   }
+
    public isEnable(element: string): boolean {
       if (cy.get(element).should('be.enabled')) return true
       else return false
@@ -154,6 +159,18 @@ class CypressMethods {
             return false
          }
       })
+   }
+
+   public getXpath(element: string) {
+      cy.xpath(element).should('be.visible')
+   }
+
+   public getXpathContains(element: string, text: string) {
+      cy.xpath(element).contains(text)
+   }
+
+   public takeScreenShot(text: string) {
+      cy.screenshot(text)
    }
 }
 

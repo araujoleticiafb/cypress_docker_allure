@@ -21,10 +21,12 @@ When('the user inputs {string} in a search field', (research) => {
 Then('all videos are displayed', () => {
     cypressMethods.containsText(GLOBOPLAY_HOME_PAGE_ELEMENTS.resultTitle, CONSTANTS.resultTitleTxt)
     cypressMethods.containsText(GLOBOPLAY_HOME_PAGE_ELEMENTS.resultVideo, CONSTANTS.resultVideoTxt)
+    cypressMethods.takeScreenShot('videos')
     }
 );
 
 Then('a message is displayed', () => {
     cypressMethods.containsText(GLOBOPLAY_HOME_PAGE_ELEMENTS.noResults, CONSTANTS.noResultsTxt)
+    cypressMethods.takeScreenShot('inexistent-error-msg')
     }
 );
