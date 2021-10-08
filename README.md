@@ -53,7 +53,7 @@ $ docker run -it -p 8787:8787 YOUR_IMAGE_NAME ci @e2e
 ```
 ### 📊 View Allure Reports
 ```sh
-$ http://localhost:8787
+http://localhost:8787
 ```
 > **NOTE 2:** When running tests using Docker you could not click on the URL, which is displayed at the end of tests. So you must change http://172.17.0.3:8787 to http://localhost:8787.
 > > 🐛 [Error base image Cypress](https://github.com/cypress-io/cypress/issues/4351#issuecomment-559489091) 
